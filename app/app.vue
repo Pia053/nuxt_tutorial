@@ -1,51 +1,17 @@
-<script setup></script>
-
 <template>
-  <UApp>
-    <UHeader>
-      <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
-        </NuxtLink>
-
-        <TemplateMenu />
-      </template>
-
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UHeader>
-
-    <UMain>
+  <UContainer>
+    <NuxtLayout>
       <NuxtPage />
-    </UMain>
-
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UFooter>
-  </UApp>
+    </NuxtLayout>
+  </UContainer>
 </template>
+
+<script lang="ts">
+/**
+ * +, NuwxxtLayout: là khugng tranh. nó bảo đi tìm file
+ * trong thư mục layouts và ốp vào đây. Nếu không khai báo layout nào
+ * nó mặc định tìm default.vue
+ * +, NuxtPage: khi vô trang chủ / nó hiển thị pages/index.vue,
+ * khi vào /products nó hiển thị pages/products/index.vue
+ */
+</script>
