@@ -7,3 +7,6 @@ export * from "./backend/common";
 
 export * from "./client/product";
 export * from "./client/cart";
+export * from "./client/user";
+
+export * from "./auth";

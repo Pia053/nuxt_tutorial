@@ -5,3 +5,12 @@ export interface ApiResponse<T> {
   message?: string;
   errors?: Record<string, string[]>;
 }
+
+export interface Pagination {
+  total: number;
+  per_page: number;
+  current_page: number;
+  last_page: number;
+  from: number;
+  to: number;
+}
